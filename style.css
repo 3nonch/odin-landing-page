@@ -1,0 +1,258 @@
+:root {
+  --dark-bg-color: #1f2937;
+  --hero-main-text-color: #f9faf8;
+  --hero-secondary-text-color: #e5e7eb;
+  --header-logo-text-color: #f9faf8;
+  --header-info-text-color: #1f2937;
+  --btn-color: #3882f6;
+  --quote-bg-color: #e5e7eb;
+  --quote-text-color: #1f2937;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+}
+
+header {
+  background-color: var(--dark-bg-color);
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-box ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu-box ul li {
+  list-style: none;
+}
+
+.hero-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 7rem 0;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.container {
+  max-width: 108rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero-main-text {
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: var(--hero-main-text-color);
+}
+
+.hero-secondary-text {
+  font-size: 1.8rem;
+  color: var(--hero-secondary-text-color);
+  margin: 1rem 0;
+}
+
+.header-logo {
+  font-size: 2.4rem;
+  color: var(--header-logo-text-color);
+}
+
+.btn {
+  background-color: var(--btn-color);
+  color: var(--hero-secondary-text-color);
+  padding: 1rem;
+  display: inline-block;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  border-radius: 0.3rem;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.info-header {
+  color: var(--header-info-text-color);
+  font-size: 3.6rem;
+}
+
+.quote {
+  background-color: var(--quote-bg-color);
+  font-size: 3.6rem;
+  color: var(--quote-text-color);
+  font-style: italic;
+  font-weight: lighter;
+}
+
+section.information {
+  text-align: center;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-imgs {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 7rem;
+}
+
+.info-imgs img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.fig-header {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.fig-desc {
+  font-size: 1.1rem;
+}
+
+section.quote {
+  padding: 7rem 0;
+}
+
+.quote-right {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+section.cta {
+  padding: 7rem 0;
+}
+
+.cta-box {
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--hero-main-text-color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://images.pexels.com/photos/12917935/pexels-photo-12917935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3rem;
+}
+
+.cta-header {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-size: 1.4rem;
+}
+
+.cta-btn {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  color: var(--hero-main-text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0);
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--hero-main-text-color);
+}
+
+footer {
+  background-color: var(--dark-bg-color);
+  color: var(--header-logo-text-color);
+  text-align: center;
+  font-weight: lighter;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero-box {
+    flex-direction: column-reverse;
+    padding: 2rem 0;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-main-text {
+    font-size: 2.4rem;
+  }
+  .hero-secondary-text {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+  section.information {
+    padding: 2rem 0;
+  }
+  .info-header {
+    font-size: 2.4rem;
+  }
+  .info-imgs {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .info-imgs > * {
+    flex: 1 1 25rem;
+  }
+  section.quote {
+    padding: 2rem 0;
+    font-size: 1.8rem;
+  }
+  .quote-right {
+    font-size: 1.8rem;
+  }
+  section.cta {
+    padding: 2rem 0;
+  }
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
