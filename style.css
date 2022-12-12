@@ -234,12 +234,12 @@ footer {
     font-size: 2.4rem;
   }
   .info-imgs {
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
   }
-  .info-imgs > * {
+/*  .info-imgs > * {
     flex: 1 1 25rem;
-  }
+  } */
   section.quote {
     padding: 2rem 0;
     font-size: 1.8rem;
